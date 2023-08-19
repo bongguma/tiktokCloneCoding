@@ -4,7 +4,7 @@ import 'package:tiktokclonecoding/constants/gaps.dart';
 import 'package:tiktokclonecoding/constants/sizes.dart';
 import 'package:tiktokclonecoding/sign_up/widget/auth_button.dart';
 import 'package:tiktokclonecoding/sign_up/screen/login_screen.dart';
-import 'package:tiktokclonecoding/sign_up/screen/email_screen.dart';
+import 'package:tiktokclonecoding/sign_up/screen/user_name_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class SignUpScreen extends StatelessWidget {
   void _onEmailTap(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => const EmailScreen(),
+        builder: (context) => const UserNameScreen(),
       ),
     );
   }
